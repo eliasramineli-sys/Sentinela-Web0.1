@@ -1,0 +1,11 @@
+LICENCIAMENTO DO CÓDIGO PRÓPRIO PENDENTE
+
+O titular ainda não escolheu uma licença para o código original do Sentinela Web.
+Este arquivo não concede uma licença de código aberto. Antes de publicar ou
+redistribuir publicamente, o titular deve definir os termos aplicáveis e substituir
+este aviso pela licença escolhida. O package.json usa UNLICENSED para registrar
+essa pendência, sem presumir uma escolha pelo titular.
+
+As dependências de terceiros mantêm suas próprias licenças. As licenças integrais
+de tldts, tldts-core e punycode são preservadas em
+extensao-pronta/THIRD_PARTY_NOTICES.txt pelo processo de build.

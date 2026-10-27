@@ -1,0 +1,280 @@
+[
+  {
+    "name": "Portal oficial Gov.br",
+    "url": "https://www.gov.br/",
+    "status": "low",
+    "official": "Gov.br",
+    "code": "OFFICIAL_DOMAIN",
+    "domain": "www.gov.br"
+  },
+  {
+    "name": "Subdomínio oficial",
+    "url": "https://sso.acesso.gov.br/login",
+    "status": "low",
+    "official": "Gov.br",
+    "code": "OFFICIAL_DOMAIN",
+    "domain": "acesso.gov.br"
+  },
+  {
+    "name": "PayPal oficial",
+    "url": "https://www.paypal.com/signin",
+    "status": "low",
+    "official": "PayPal",
+    "code": "OFFICIAL_DOMAIN",
+    "domain": "paypal.com"
+  },
+  {
+    "name": "Subdomínio PayPal",
+    "url": "https://www.paypal.com.br.paypal.com/",
+    "status": "low",
+    "official": "PayPal",
+    "code": "OFFICIAL_DOMAIN",
+    "domain": "paypal.com"
+  },
+  {
+    "name": "Referência lexical de Gov não oficial",
+    "url": "https://fakegov.br/",
+    "status": "low",
+    "official": null,
+    "domain": "fakegov.br"
+  },
+  {
+    "name": "Subdomínio enganoso Gov",
+    "url": "https://www.gov.br.conta.example/",
+    "status": "high",
+    "official": null,
+    "code": "DECEPTIVE_govbr",
+    "domain": "conta.example"
+  },
+  {
+    "name": "Subdomínio enganoso PayPal",
+    "url": "https://paypal.com.conta.example/",
+    "status": "high",
+    "official": null,
+    "code": "DECEPTIVE_paypal",
+    "domain": "conta.example"
+  },
+  {
+    "name": "Marca mais login Gov",
+    "url": "https://gov-br-validar.example/login",
+    "status": "high",
+    "official": null,
+    "code": "BRAND_ACTION_govbr",
+    "domain": "gov-br-validar.example"
+  },
+  {
+    "name": "Golpe sintético Desenrola",
+    "url": "https://desenrola-gov-br.example/pagamento",
+    "status": "high",
+    "official": null,
+    "code": "BRAND_ACTION_govbr",
+    "domain": "desenrola-gov-br.example"
+  },
+  {
+    "name": "Marca mais ação PayPal",
+    "url": "https://paypal-seguranca.example/entrar",
+    "status": "high",
+    "official": null,
+    "code": "BRAND_ACTION_paypal",
+    "domain": "paypal-seguranca.example"
+  },
+  {
+    "name": "Marca sem ação é ambígua",
+    "url": "https://paypal-comunidade.example/",
+    "status": "attention",
+    "official": null,
+    "code": "BRAND_SIMILAR_paypal",
+    "domain": "paypal-comunidade.example"
+  },
+  {
+    "name": "Notícia não é marca no host",
+    "url": "https://jornal.example/noticia/gov.br",
+    "status": "attention",
+    "official": null,
+    "code": "RESERVED_DOMAIN",
+    "domain": "jornal.example"
+  },
+  {
+    "name": "Typosquatting é heurística",
+    "url": "https://paypol.example/login",
+    "status": "attention",
+    "official": null,
+    "code": "BRAND_SIMILAR_paypal",
+    "domain": "paypol.example"
+  },
+  {
+    "name": "Unicode homógrafo parcial",
+    "url": "https://раypal.example/login",
+    "status": "high",
+    "official": null,
+    "code": "HOMOGRAPH_paypal"
+  },
+  {
+    "name": "Unicode legítimo",
+    "url": "https://bücher.de/",
+    "status": "low",
+    "official": null,
+    "code": "IDN",
+    "domain": "xn--bcher-kva.de"
+  },
+  {
+    "name": "HTTP isolado não é alto risco",
+    "url": "http://example.com/",
+    "status": "attention",
+    "official": null,
+    "code": "HTTP",
+    "domain": "example.com"
+  },
+  {
+    "name": "HTTP oficial requer atenção",
+    "url": "http://www.gov.br/",
+    "status": "attention",
+    "official": "Gov.br",
+    "code": "HTTP",
+    "domain": "www.gov.br"
+  },
+  {
+    "name": "Usuário mascarado Gov",
+    "url": "https://www.gov.br@conta.example/",
+    "status": "high",
+    "official": null,
+    "code": "DECEPTIVE_govbr",
+    "domain": "conta.example"
+  },
+  {
+    "name": "Usuário comum não prova fraude",
+    "url": "https://usuario@exemplo.example/",
+    "status": "attention",
+    "official": null,
+    "code": "USERINFO",
+    "domain": "exemplo.example"
+  },
+  {
+    "name": "Porta alternativa",
+    "url": "https://example.com:8443/",
+    "status": "attention",
+    "official": null,
+    "code": "NONSTANDARD_PORT",
+    "domain": "example.com"
+  },
+  {
+    "name": "Porta padrão",
+    "url": "https://example.com:443/",
+    "status": "low",
+    "official": null,
+    "code": "HTTPS",
+    "domain": "example.com"
+  },
+  {
+    "name": "IPv4",
+    "url": "http://192.0.2.1/",
+    "status": "attention",
+    "official": null,
+    "code": "IP_ADDRESS",
+    "domain": null
+  },
+  {
+    "name": "IPv6",
+    "url": "https://[2001:db8::1]/",
+    "status": "attention",
+    "official": null,
+    "code": "IP_ADDRESS",
+    "domain": null
+  },
+  {
+    "name": "IPv4 numérico normalizado",
+    "url": "https://2130706433/",
+    "status": "attention",
+    "official": null,
+    "code": "IP_ADDRESS",
+    "domain": null
+  },
+  {
+    "name": "Encurtador não expandido",
+    "url": "https://bit.ly/simulacao",
+    "status": "attention",
+    "official": null,
+    "code": "SHORTENER",
+    "domain": "bit.ly"
+  },
+  {
+    "name": "Encurtador precisa fronteira",
+    "url": "https://bit.ly.not-a-shortener.com/",
+    "status": "low",
+    "official": null,
+    "code": "HTTPS",
+    "domain": "not-a-shortener.com"
+  },
+  {
+    "name": "Sufixo público composto",
+    "url": "https://sub.example.co.uk/",
+    "status": "low",
+    "official": null,
+    "code": "HTTPS",
+    "domain": "example.co.uk"
+  },
+  {
+    "name": "Sufixo privado hospedado",
+    "url": "https://minha-loja.github.io/",
+    "status": "low",
+    "official": null,
+    "code": "HTTPS",
+    "domain": "minha-loja.github.io"
+  },
+  {
+    "name": "Exemplo neutro reservado",
+    "url": "https://loja.example/",
+    "status": "attention",
+    "official": null,
+    "code": "RESERVED_DOMAIN",
+    "domain": "loja.example"
+  },
+  {
+    "name": "Sufixo desconhecido",
+    "url": "https://loja.unknownsentinel/",
+    "status": "attention",
+    "official": null,
+    "code": "UNKNOWN_SUFFIX",
+    "domain": "loja.unknownsentinel"
+  },
+  {
+    "name": "Muitos subdomínios",
+    "url": "https://a.b.c.d.e.f.example.com/",
+    "status": "attention",
+    "official": null,
+    "code": "MANY_SUBDOMAINS",
+    "domain": "example.com"
+  },
+  {
+    "name": "Domínio informado sem esquema",
+    "url": "www.gov.br/pt-br",
+    "status": "low",
+    "official": "Gov.br",
+    "code": "OFFICIAL_DOMAIN",
+    "domain": "www.gov.br"
+  },
+  {
+    "name": "Esquema maiúsculo e ponto final",
+    "url": "HTTPS://WWW.GOV.BR./",
+    "status": "low",
+    "official": "Gov.br",
+    "code": "OFFICIAL_DOMAIN",
+    "domain": "www.gov.br"
+  },
+  {
+    "name": "Marca somente na query",
+    "url": "https://example.com/?site=gov.br",
+    "status": "low",
+    "official": null,
+    "code": "HTTPS",
+    "domain": "example.com"
+  },
+  {
+    "name": "Fronteira PayPal sem coincidência",
+    "url": "https://notpaypal.com/",
+    "status": "low",
+    "official": null,
+    "code": "HTTPS",
+    "domain": "notpaypal.com"
+  }
+]

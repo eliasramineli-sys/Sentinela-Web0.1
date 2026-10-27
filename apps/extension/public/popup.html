@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sentinela Web</title><link rel="stylesheet" href="styles.css"><script type="module" src="popup.js"></script></head>
+<body class="popup">
+  <header class="topbar">
+    <a class="brand" href="help.html" target="_blank" rel="noopener"><img src="icons/48.png" alt="" width="36" height="36"><span>SENTINELA <b>WEB</b><small>Sua segurança começa antes do clique.</small></span></a>
+    <button id="theme" class="icon-button" type="button" aria-label="Alternar tema" title="Alternar tema">◐</button>
+  </header>
+  <main>
+    <div class="eyebrow"><span class="local-dot"></span> ANÁLISE LOCAL <span class="version">MVP 0.1</span></div>
+    <section id="result" class="result attention" aria-busy="true" aria-labelledby="status">
+      <div class="result-heading"><span id="status-symbol" class="status-symbol" aria-hidden="true">…</span><span class="overline">RESULTADO DO ENDEREÇO</span></div>
+      <h1 id="status">Analisando a aba…</h1><p id="summary" class="summary">Apenas sinais da URL. Sem enviar dados.</p>
+      <div class="host-box"><span>SERVIDOR REAL <span id="source" class="source">ABA ATIVA</span></span><strong id="hostname" dir="ltr">Aguardando endereço</strong><small id="domain" dir="ltr">Domínio registrável: —</small></div>
+    </section>
+    <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+    <section id="warning-panel" class="warning-panel" hidden aria-label="Orientação para alto risco"><strong>Atenção: possível fraude</strong><p>Evite informar dados ou pagar. Confirme o endereço por um canal oficial independente.</p><div id="official-links"></div></section>
+    <section class="signals" aria-labelledby="signals-title"><div class="section-heading"><h2 id="signals-title">O que encontramos</h2><span id="signal-count" class="pill">—</span></div><ul id="indicators" class="indicator-list"></ul></section>
+    <details id="details"><summary>Ver detalhes da análise <span aria-hidden="true">↗</span></summary><div class="details-content"><dl id="technical"></dl><h3>Verificações executadas</h3><ul id="checks"></ul><h3>Limites desta versão</h3><ul id="limitations"></ul><p>Não há pontuação nem probabilidade estatística. “Ameaça conhecida” exige reputação externa e está indisponível na 0.1.</p></div></details>
+    <form id="manual-form" class="manual-form" novalidate><label for="url-input">Confira um link antes de abrir</label><div class="input-row"><input id="url-input" name="url" type="text" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Cole um endereço ou domínio" maxlength="8192" aria-describedby="manual-hint"><button class="primary-button" type="submit">Analisar</button></div><small id="manual-hint">O link não será aberto. A análise acontece neste dispositivo.</small></form>
+    <p id="error" class="error-message" role="alert" hidden></p>
+    <button id="refresh" class="secondary-button full-width" type="button"><span aria-hidden="true">↻</span> Analisar aba novamente</button>
+    <p class="disclaimer">Nenhum sinal encontrado não significa segurança garantida. Esta versão não bloqueia sites nem acompanha sua navegação.</p>
+  </main>
+  <footer><a href="help.html" target="_blank" rel="noopener">Orientações e próximos módulos</a><a href="options.html" target="_blank" rel="noopener" aria-label="Abrir preferências">Preferências</a></footer>
+</body></html>

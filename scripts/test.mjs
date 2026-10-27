@@ -1,0 +1,10 @@
+import { build } from 'esbuild';
+import { mkdir, readdir, rm } from 'node:fs/promises';
+import { spawnSync } from 'node:child_process';
+await rm('.test-build', { recursive: true, force: true });
+await mkdir('.test-build', { recursive: true });
+const entries = (await readdir('tests')).filter(f => f.endsWith('.test.ts')).map(f => `tests/${f}`);
+await build({ entryPoints: entries, outdir: '.test-build', outExtension: { '.js': '.mjs' }, bundle: true, format: 'esm', platform: 'node', target: 'node24' });
+const files = (await readdir('.test-build')).filter(f => f.endsWith('.mjs')).map(f => `.test-build/${f}`);
+const result = spawnSync(process.execPath, ['--test', ...files], { stdio: 'inherit' });
+process.exitCode = result.status ?? 1;

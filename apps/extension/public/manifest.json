@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Sentinela Web — Análise local de links",
+  "version": "0.1.0",
+  "description": "Identifique sinais estruturais de phishing em URLs. Análise sob demanda, local e explicável. Sem garantia de segurança.",
+  "minimum_chrome_version": "120",
+  "permissions": ["activeTab", "storage"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_title": "Sentinela Web — analisar endereço", "default_popup": "popup.html", "default_icon": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" } },
+  "icons": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" },
+  "options_ui": { "page": "options.html", "open_in_tab": true },
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'"
+  }
+}

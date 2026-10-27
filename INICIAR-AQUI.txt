@@ -1,0 +1,26 @@
+SENTINELA WEB 0.1 — INSTALAÇÃO RÁPIDA
+
+1. Extraia todo o ZIP para uma pasta permanente.
+2. No Chrome, abra chrome://extensions; no Edge, edge://extensions.
+3. Ative Modo do desenvolvedor.
+4. Clique em Carregar sem compactação / Carregar descompactada.
+5. Selecione a pasta sentinela-web\extensao-pronta (contém manifest.json).
+6. Fixe o ícone e clique nele em uma aba HTTP/HTTPS.
+7. Para conferir sem abrir um destino, cole o link no campo manual do popup.
+
+Teste seguro para colar, sem visitar:
+https://www.gov.br.conta.example/
+Resultado esperado: Alto risco. Domínio real: conta.example.
+
+Não há servidor, conta ou API para configurar.
+Não precisa instalar Node/Python para usar o build pronto.
+Não abra popup.html com duplo clique para instalar.
+
+Análise sob demanda: não bloqueia sites ou monitora toda a navegação.
+Baixo risco não significa segurança garantida. Reputação, e-mail e denúncias
+ainda não estão implementados. Cobertura inicial de marcas: Gov.br e PayPal.
+
+Testado: 86 testes automatizados e 18 verificações da interface com APIs simuladas.
+Instalação nativa no Chrome/Edge do Windows ainda precisa ser validada.
+
+Leia README.md e docs/INSTALACAO.md para mais detalhes.
